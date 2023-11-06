@@ -1,0 +1,202 @@
+:root {
+  --background-color: #f8f2ec;
+  --text-color: #78829d;
+  --black-color: #252f4a;
+  --link-color: #00bcd4;
+  --main-radius: 10px;
+  --main-line-height: 1.8;
+}
+.user-profile,
+.skills,
+.last-activities {
+  box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+  background-color: white;
+  padding: 20px;
+  border-radius: var(--main-radius);
+  margin-top: 30px;
+}
+/* Start User Profile*/
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+@media (max-width: 767px) {
+  .user-profile {
+    flex-direction: column;
+  }
+}
+.user-profile .info {
+  flex-basis: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+}
+.user-profile .info img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.user-profile .info h3 {
+  text-transform: capitalize;
+}
+.user-profile .info p {
+  text-transform: capitalize;
+  font-size: 14px;
+}
+.user-profile .info div:first-of-type {
+  width: 100%;
+  height: 5px;
+  background-color: #eee;
+  border-radius: var(--main-radius);
+}
+.user-profile .info div:first-of-type span {
+  display: block;
+  width: 60%;
+  height: 100%;
+  background-color: var(--link-color);
+  border-radius: var(--main-radius);
+}
+.user-profile .info p:first-of-type {
+  font-weight: 600;
+}
+.user-profile .info .stars i {
+  color: gold;
+}
+.user-profile .other-info > div {
+  padding: 20px;
+  border-left: 1px solid #eee;
+}
+.user-profile .other-info > div:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+}
+@media (max-width: 767px) {
+  .user-profile .other-info > div {
+    border-left: none;
+  }
+}
+.user-profile .other-info > div > p {
+  text-transform: capitalize;
+  color: #008798;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.user-profile .other-info .sub-box {
+  text-transform: capitalize;
+  color: var(--text-color);
+  font-size: 15px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.user-profile .other-info .sub-box p {
+  width: 200px;
+}
+.user-profile .other-info .sub-box p span {
+  color: var(--black-color);
+  font-weight: 500;
+}
+.email {
+  text-transform: lowercase;
+}
+/* End User Profile*/
+/***************/
+.skills-activities {
+  display: flex;
+  gap: 30px;
+}
+@media (max-width: 767px) {
+  .skills-activities {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+/***************/
+/* Start skills*/
+.skills {
+  flex-basis: 25%;
+}
+.skills div:not(:first-of-type) {
+  padding: 20px 0;
+}
+.skills div:not(:first-of-type):not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+}
+.skills div:not(:first-of-type) span {
+  padding: 5px 10px;
+  background-color: #eee;
+  border-radius: var(--main-radius);
+  margin-right: 10px;
+}
+@media (max-width: 310px) {
+  .skills div:not(:first-of-type) span {
+    display: inline-block;
+    margin-top: 10px;
+  }
+}
+/* End skills*/
+/* Start last activities*/
+.last-activities {
+  flex: 1;
+}
+.last-activities div:not(:first-of-type) {
+  padding: 20px 0;
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+@media (max-width: 767px) {
+  .last-activities div:not(:first-of-type) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.last-activities div img {
+  width: 80px;
+  padding: 10px;
+  background-color: var(--background-color);
+  border-radius: 50%;
+}
+.last-activities div:not(:first-of-type) > div:first-of-type {
+  flex: 1;
+}
+.last-activities div:not(:first-of-type) > div:last-of-type {
+  text-align: right;
+}
+@media (max-width: 767px) {
+  .last-activities div:not(:first-of-type) > div:last-of-type {
+    text-align: center;
+  }
+}
+.last-activities div:not(:first-of-type) > div > p:first-of-type {
+  color: var(--black-color);
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.last-activities div:not(:first-of-type) > div > p:last-of-type {
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.last-activities div:not(:first-of-type):not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+}
+.last-activities div:not(:first-of-type):before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -105%;
+  background-color: #f6f6f6;
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+  z-index: -1;
+}
+.last-activities div:not(:first-of-type):hover:before {
+  left: 0;
+}
+/* End last activities*/

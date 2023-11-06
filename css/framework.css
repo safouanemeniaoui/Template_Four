@@ -1,0 +1,86 @@
+:root {
+  --background-color: #f8f2ec;
+  --text-color: #78829d;
+  --black-color: #252f4a;
+  --link-color: #00bcd4;
+  --main-radius: 10px;
+  --main-line-height: 1.8;
+}
+.bx-title h3 {
+  text-transform: capitalize;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: var(--black-color);
+}
+.bx-title p {
+  text-transform: capitalize;
+  color: var(--text-color);
+  font-weight: 600;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .bx-title p {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+}
+.flex-sb-c {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title-4 {
+  text-transform: capitalize;
+  font-size: 16px;
+  line-height: 1.8;
+}
+.p-4 {
+  color: var(--text-color);
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+@media (max-width: 767px) {
+  .title-4 {
+    font-size: 14px;
+  }
+  .p-4 {
+    font-size: 11px;
+    font-weight: 500;
+    line-height: var(--main-line-height);
+  }
+}
+label input {
+  appearance: none;
+  width: 80px;
+  height: 32px;
+  background-color: #eee;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+label input:checked {
+  background-color: var(--link-color);
+}
+label div {
+  position: relative;
+}
+label div::before {
+  font-family: var(--fa-style-family-classic);
+  content: "\f057";
+  position: absolute;
+  top: -31px;
+  left: 6px;
+  color: var(--black-color);
+  transition: left 0.3s;
+  font-size: 20px;
+}
+label input:checked + div::before {
+  content: "\f058";
+  left: 54px;
+  color: white;
+}
+p {
+  color: var(--text-color);
+}

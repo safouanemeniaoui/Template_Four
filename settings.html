@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="images/head.png" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/normalise.css" />
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/settings.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="top-bar">
+      <div class="logo">
+        <i class="fa-solid fa-bars menu-icon"></i>
+        <img src="images/logo.png" alt="" />
+        <i class="fa-solid fa-right-from-bracket show-slider"></i>
+      </div>
+      <div class="search">
+        <input type="text" class="search-input" placeholder="search..." />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <div class="shorts">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <i class="fa-solid fa-image"></i>
+        <i class="fa-regular fa-rectangle-list"></i>
+        <img src="images/profile.jpg" alt="" />
+        <i class="fa-solid fa-sliders"></i>
+        <i class="fa-solid fa-border-none show-options-bar"></i>
+      </div>
+    </div>
+    <div class="container">
+      <div class="slider">
+        <div class="slider-menu">
+          <div class="dashboard active" data-set="dashboard">
+            <a href="index.html"
+              ><i class="fa-solid fa-gauge"></i><span>dashboard</span></a
+            >
+          </div>
+          <div class="settings" data-set="settings">
+            <a href="settings.html"
+              ><i class="fa-solid fa-gear"></i><span>settings</span></a
+            >
+          </div>
+          <div class="profile" data-set="profile">
+            <a href="profile.html"
+              ><i class="fa-solid fa-user"></i><span>profile</span></a
+            >
+          </div>
+          <div class="projects" data-set="projects">
+            <a href="projects.html"
+              ><i class="fa-solid fa-diagram-project"></i
+              ><span>projects</span></a
+            >
+          </div>
+          <div class="courses" data-set="courses">
+            <a href="courses.html"
+              ><i class="fa-solid fa-graduation-cap"></i><span>courses</span></a
+            >
+          </div>
+          <div class="friends" data-set="friends">
+            <a href="friends.html"
+              ><i class="fa-solid fa-user-group"></i><span>friends</span></a
+            >
+          </div>
+          <div class="files" data-set="files">
+            <a href="files.html"
+              ><i class="fa-solid fa-file-contract"></i><span>files</span></a
+            >
+          </div>
+          <div class="plans" data-set="plans">
+            <a href="plans.html"
+              ><i class="fa-solid fa-sack-dollar"></i><span>plans</span></a
+            >
+          </div>
+        </div>
+        <div class="slider-welcome">
+          <h3>welcome to dashbord</h3>
+          <p>Join the movement make a difference.</p>
+          <img src="images/astro.png" alt="" />
+          <a href="#">get started</a>
+        </div>
+      </div>
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="top-title">
+          <div class="left-title">
+            <i class="fa-solid fa-house"></i>
+            <span></span>
+            <span>settings</span>
+            <span></span>
+            <span>default</span>
+            <h2>settings</h2>
+          </div>
+          <div>
+            <a href="#">create project</a>
+          </div>
+        </div>
+        <!-- Start Settings Content -->
+        <div class="boxes">
+          <div class="site-control">
+            <div class="bx-title">
+              <h3>site control</h3>
+              <p>control the website if there is maintenance</p>
+            </div>
+            <div class="bx-op-setting flex-sb-c">
+              <div>
+                <h4 class="title-4">website control</h4>
+                <p class="p-4">Open/Close Website And Type The Reason</p>
+              </div>
+              <label>
+                <input type="checkbox" />
+                <div></div>
+              </label>
+            </div>
+            <textarea
+              name="site-control-text"
+              placeholder="close message content"
+              id=""
+            ></textarea>
+          </div>
+          <div class="general-info">
+            <div class="bx-title">
+              <h3>general info</h3>
+              <p>general information about your account</p>
+            </div>
+            <p>first name</p>
+            <input type="text" placeholder="first name" />
+            <p>last name</p>
+            <input type="text" placeholder="last name" />
+            <p>email</p>
+            <div class="email flex-sb-c">
+              <input type="text" placeholder="o@nn.tn" disabled />
+              <span class="change">change</span>
+            </div>
+          </div>
+          <div class="security-info">
+            <div class="bx-title">
+              <h3>security info</h3>
+              <p>security information about your account</p>
+            </div>
+            <div class="bx-op-setting flex-sb-c">
+              <div>
+                <h4 class="title-4">website control</h4>
+                <p class="p-4">Open/Close Website And Type The Reason</p>
+              </div>
+              <a href="#">change</a>
+            </div>
+            <div class="bx-op-setting flex-sb-c">
+              <div>
+                <h4 class="title-4">website control</h4>
+                <p class="p-4">Open/Close Website And Type The Reason</p>
+              </div>
+              <label>
+                <input type="checkbox" />
+                <div></div>
+              </label>
+            </div>
+            <div class="bx-op-setting flex-sb-c">
+              <div>
+                <h4 class="title-4">website control</h4>
+                <p class="p-4">Open/Close Website And Type The Reason</p>
+              </div>
+              <a href="#">devices</a>
+            </div>
+          </div>
+          <div class="socila-info">
+            <div class="bx-title">
+              <h3>socila info</h3>
+              <p>social media information</p>
+            </div>
+            <div class="twitter flex-sb-c">
+              <input type="text" placeholder="twitter username" />
+              <i class="fa-brands fa-x-twitter"></i>
+            </div>
+            <div class="facebook flex-sb-c">
+              <input type="text" placeholder="facebook username" />
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+            <div class="linkein flex-sb-c">
+              <input type="text" placeholder="linkein username" />
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+            <div class="youtube flex-sb-c">
+              <input type="text" placeholder="youtube username" />
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+          <div class="widgets-control">
+            <div class="bx-title">
+              <h3>widgets control</h3>
+              <p>show/hide widgets</p>
+            </div>
+            <div class="widg-c-option">
+              <input type="checkbox" id="1" checked />
+              <label for="1">quick draft</label>
+            </div>
+            <div class="widg-c-option">
+              <input type="checkbox" id="2" checked />
+              <label for="2">yearly targets</label>
+            </div>
+            <div class="widg-c-option">
+              <input type="checkbox" id="3" />
+              <label for="3">tickets statistics</label>
+            </div>
+            <div class="widg-c-option">
+              <input type="checkbox" id="4" />
+              <label for="4">latest news</label>
+            </div>
+            <div class="widg-c-option">
+              <input type="checkbox" id="5" />
+              <label for="5">latest tasks</label>
+            </div>
+            <div class="widg-c-option">
+              <input type="checkbox" id="6" checked />
+              <label for="6">top search items</label>
+            </div>
+          </div>
+          <div class="backup-manager">
+            <div class="bx-title">
+              <h3>backup manager</h3>
+              <p>control backup time and location</p>
+            </div>
+            <div class="back-options">
+              <input type="radio" id="r1" name="r1" checked />
+              <label for="r1">daily</label>
+            </div>
+            <div class="back-options">
+              <input type="radio" id="r2" name="r1" />
+              <label for="r2">weekly</label>
+            </div>
+            <div class="back-options">
+              <input type="radio" id="r3" name="r1" />
+              <label for="r3">monthly</label>
+            </div>
+            <div class="other-options-bc">
+              <div class="megaman">
+                <i class="fa-solid fa-server"></i>
+                <p>megaman</p>
+              </div>
+              <div class="zero active">
+                <i class="fa-solid fa-server"></i>
+                <p>zero</p>
+              </div>
+              <div class="sigma">
+                <i class="fa-solid fa-server"></i>
+                <p>sigma</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Settings Content -->
+        <div class="footer">
+          <p>2023 &copy; safouane</p>
+          <ul>
+            <li><a href="#">help</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">purchase</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="options-bar">
+        <a href="#"><i class="fa-solid fa-calendar-days"></i></a>
+        <a href="#"><i class="fa-solid fa-square-plus"></i></a>
+        <a href="#"><i class="fa-solid fa-file-code"></i></a>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

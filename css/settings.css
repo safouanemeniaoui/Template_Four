@@ -1,0 +1,221 @@
+:root {
+  --background-color: #f8f2ec;
+  --text-color: #78829d;
+  --black-color: #252f4a;
+  --link-color: #00bcd4;
+  --main-radius: 10px;
+  --main-line-height: 1.8;
+  --main-transition: 0.3s;
+}
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+@media (max-width: 1350px) {
+  .boxes {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+}
+@media (max-width: 500px) {
+  .boxes {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+.boxes > div {
+  box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+  background-color: white;
+  padding: 20px;
+  border-radius: var(--main-radius);
+}
+.boxes .bx-op-setting {
+  padding-bottom: 30px;
+  padding-top: 20px;
+}
+.boxes .site-control .bx-op-setting {
+  padding-top: 0;
+}
+[name="site-control-text"] {
+  width: 100%;
+  height: 160px;
+  padding: 10px;
+  border-radius: var(--main-radius);
+  outline: none;
+}
+[name="site-control-text"]::placeholder {
+  text-transform: capitalize;
+  font-size: 12px;
+}
+.general-info p {
+  text-transform: capitalize;
+  color: var(--text-color);
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+@media (max-width: 767px) {
+  .general-info p {
+    font-size: 14px;
+  }
+}
+.general-info input {
+  width: 100%;
+  padding: 10px;
+  border-radius: var(--main-radius);
+  border: 1px solid #cfcfcf;
+  outline: none;
+  margin-bottom: 20px;
+}
+.general-info input::placeholder {
+  text-transform: capitalize;
+  font-size: 14px;
+}
+.general-info .email {
+  gap: 10px;
+}
+.general-info .email input {
+  margin-bottom: 0;
+}
+.general-info .email input::placeholder {
+  text-transform: capitalize;
+  font-size: 14px;
+}
+.general-info .email span {
+  text-transform: capitalize;
+  color: var(--link-color);
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  .general-info .email span {
+    font-size: 14px;
+  }
+}
+.bx-op-setting a {
+  padding: 7px 10px;
+  background-color: var(--link-color);
+  color: white;
+  border-radius: var(--main-radius);
+  font-weight: 500;
+  transition: var(--main-transition);
+}
+.bx-op-setting a:hover {
+  background-color: #009eb3;
+}
+.security-info .bx-op-setting:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+}
+.socila-info .flex-sb-c {
+  background-color: #eee;
+  margin-bottom: 20px;
+  border-radius: var(--main-radius);
+  border: 1px solid #cfcfcf;
+}
+.socila-info .flex-sb-c i {
+  padding: 10px;
+  width: 40px;
+  font-size: 16px;
+  border-right: 1px solid #cfcfcf;
+  text-align: center;
+  color: var(--text-color);
+  order: 1;
+}
+.socila-info .flex-sb-c input {
+  width: 100%;
+  padding: 15px 10px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  order: 2;
+  font-size: 14px;
+}
+.socila-info .flex-sb-c input:focus + i {
+  color: var(--black-color);
+}
+.socila-info .flex-sb-c input::placeholder {
+  text-transform: capitalize;
+  font-size: 13px;
+}
+.widgets-control .widg-c-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.widg-c-option input {
+  width: 22px;
+  height: 22px;
+  border: 2px solid var(--link-color);
+  border-radius: 5px;
+  appearance: none;
+  position: relative;
+  overflow: hidden;
+}
+.widg-c-option input::before {
+  font-family: var(--fa-style-family-classic);
+  content: "\f058";
+  position: absolute;
+  color: white;
+  background-color: var(--link-color);
+  top: -2px;
+  left: 0;
+  font-size: 16px;
+  padding: 2px;
+  transform: scale(0);
+  transition: var(--main-transition);
+}
+.widg-c-option input:checked::before {
+  transform: scale(1) rotate(1turn);
+}
+.widg-c-option input:checked + label {
+  font-weight: 600;
+}
+.widg-c-option label {
+  text-transform: capitalize;
+  cursor: pointer;
+  color: var(--black-color);
+}
+.backup-manager .back-options {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.backup-manager .back-options input {
+  width: 22px;
+  height: 22px;
+}
+.backup-manager .back-options input:checked + label {
+  font-weight: 600;
+}
+.backup-manager .back-options label {
+  text-transform: capitalize;
+  cursor: pointer;
+  color: var(--black-color);
+}
+.backup-manager .other-options-bc {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+}
+.backup-manager .other-options-bc > div {
+  border: 1px solid #d6d6d6;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.backup-manager .other-options-bc > div.active {
+  color: var(--link-color);
+  font-weight: bold;
+  border-color: var(--link-color);
+  border-width: 2px;
+}
+.backup-manager .other-options-bc > div.active p {
+  color: var(--link-color);
+}
+.backup-manager .other-options-bc > div i {
+  margin-bottom: 10px;
+}
+.backup-manager .other-options-bc > div p {
+  text-transform: capitalize;
+}

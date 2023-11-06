@@ -1,0 +1,139 @@
+:root {
+  --background-color: #f8f2ec;
+  --text-color: #78829d;
+  --black-color: #252f4a;
+  --link-color: #00bcd4;
+  --main-radius: 10px;
+  --main-line-height: 1.8;
+}
+.friendes-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+.friendes-content .box {
+  box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+  background-color: white;
+  border-radius: var(--main-radius);
+  position: relative;
+  padding: 10px 20px 20px;
+  transition: 0.3s;
+}
+.friendes-content .box:hover {
+  transform: translateY(-5px);
+}
+.friendes-content .box::after {
+  content: "";
+  width: 0;
+  height: 0;
+  background-color: #f6f6f6;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: 0.3s;
+}
+.friendes-content .box:hover::after {
+  width: 100%;
+  height: 100%;
+}
+.friendes-content .box .contact {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.friendes-content .box .contact i {
+  color: #606060;
+  font-size: 14px;
+  background-color: #eee;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.friendes-content .box .contact i:hover {
+  background-color: var(--link-color);
+  color: white;
+}
+.friendes-content .box img {
+  display: block;
+  width: 130px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.title-4 {
+  text-align: center;
+}
+.p-4 {
+  text-align: center;
+}
+.friendes-content .box .info {
+  margin-top: 20px;
+  padding: 15px 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.friendes-content .box .info div {
+  font-size: 13px;
+  font-weight: 500;
+}
+.friendes-content .box .info div:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+.friendes-content .box .info div span {
+  margin-left: 5px;
+}
+.friendes-content .box .links {
+  padding: 10px 0;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.friendes-content .box .links p {
+  font-size: 12px;
+}
+.friendes-content .box .links div a {
+  color: white;
+  font-size: 12px;
+  border-radius: var(--main-radius);
+  padding: 5px 10px;
+  font-weight: 600;
+}
+.friendes-content .box .links div a:first-of-type {
+  background-color: #00bcd4;
+}
+.friendes-content .box .links div a:last-of-type {
+  background-color: #e91e63;
+}
+.vip .info {
+  position: relative;
+}
+.vip .info:before {
+  content: "vip";
+  text-transform: uppercase;
+  font-size: 40px;
+  color: var(--link-color);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  animation: blink 2s ease infinite both;
+}
+/********** Animations *************/
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}

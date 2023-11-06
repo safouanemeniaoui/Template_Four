@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="images/head.png" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/normalise.css" />
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/profile.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="top-bar">
+      <div class="logo">
+        <i class="fa-solid fa-bars menu-icon"></i>
+        <img src="images/logo.png" alt="" />
+        <i class="fa-solid fa-right-from-bracket show-slider"></i>
+      </div>
+      <div class="search">
+        <input type="text" class="search-input" placeholder="search..." />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <div class="shorts">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <i class="fa-solid fa-image"></i>
+        <i class="fa-regular fa-rectangle-list"></i>
+        <img src="images/profile.jpg" alt="" />
+        <i class="fa-solid fa-sliders"></i>
+        <i class="fa-solid fa-border-none show-options-bar"></i>
+      </div>
+    </div>
+    <div class="container">
+      <div class="slider">
+        <div class="slider-menu">
+          <div class="dashboard active" data-set="dashboard">
+            <a href="index.html"
+              ><i class="fa-solid fa-gauge"></i><span>dashboard</span></a
+            >
+          </div>
+          <div class="settings" data-set="settings">
+            <a href="settings.html"
+              ><i class="fa-solid fa-gear"></i><span>settings</span></a
+            >
+          </div>
+          <div class="profile" data-set="profile">
+            <a href="profile.html"
+              ><i class="fa-solid fa-user"></i><span>profile</span></a
+            >
+          </div>
+          <div class="projects" data-set="projects">
+            <a href="projects.html"
+              ><i class="fa-solid fa-diagram-project"></i
+              ><span>projects</span></a
+            >
+          </div>
+          <div class="courses" data-set="courses">
+            <a href="courses.html"
+              ><i class="fa-solid fa-graduation-cap"></i><span>courses</span></a
+            >
+          </div>
+          <div class="friends" data-set="friends">
+            <a href="friends.html"
+              ><i class="fa-solid fa-user-group"></i><span>friends</span></a
+            >
+          </div>
+          <div class="files" data-set="files">
+            <a href="files.html"
+              ><i class="fa-solid fa-file-contract"></i><span>files</span></a
+            >
+          </div>
+          <div class="plans" data-set="plans">
+            <a href="plans.html"
+              ><i class="fa-solid fa-sack-dollar"></i><span>plans</span></a
+            >
+          </div>
+        </div>
+        <div class="slider-welcome">
+          <h3>welcome to dashbord</h3>
+          <p>Join the movement make a difference.</p>
+          <img src="images/astro.png" alt="" />
+          <a href="#">get started</a>
+        </div>
+      </div>
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="top-title">
+          <div class="left-title">
+            <i class="fa-solid fa-house"></i>
+            <span></span>
+            <span>profile</span>
+            <span></span>
+            <span>default</span>
+            <h2>profile</h2>
+          </div>
+          <div>
+            <a href="#">create project</a>
+          </div>
+        </div>
+        <!-- Start Profile Content -->
+        <div class="user-profile">
+          <div class="info">
+            <img src="images/profile.jpg" alt="" />
+            <h3>safouane meniaoui</h3>
+            <p>level 20</p>
+            <div><span></span></div>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p>550 rating</p>
+          </div>
+          <div class="other-info">
+            <div class="g-box general-info">
+              <p>general information</p>
+              <div class="sub-box flex-sb-c">
+                <p>full name : <span>safouane meniaoui</span></p>
+                <p>country : <span>gaza</span></p>
+                <p>gender : <span>male</span></p>
+                <label>
+                  <input type="checkbox" checked />
+                  <div></div>
+                </label>
+              </div>
+            </div>
+            <div class="g-box personal-info">
+              <p>personal information</p>
+              <div class="sub-box flex-sb-c">
+                <p>email : <span class="email">sam@sam.com</span></p>
+                <p>date of birth : <span>07/10/2023</span></p>
+                <p>phone : <span>0123456789</span></p>
+                <label>
+                  <input type="checkbox" />
+                  <div></div>
+                </label>
+              </div>
+            </div>
+            <div class="g-box job-info">
+              <p>job information</p>
+              <div class="sub-box flex-sb-c">
+                <p>title : <span>full stack developer</span></p>
+                <p>years of experience : <span>1+</span></p>
+                <p>programming language : <span>js</span></p>
+                <label>
+                  <input type="checkbox" />
+                  <div></div>
+                </label>
+              </div>
+            </div>
+            <div class="g-box billing-info">
+              <p>billing information</p>
+              <div class="sub-box flex-sb-c">
+                <p>payment method : <span>paypal</span></p>
+                <p>subscription : <span>monthly</span></p>
+                <p>email : <span class="email">sam@sam.com</span></p>
+                <label>
+                  <input type="checkbox" checked />
+                  <div></div>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skills-activities">
+          <div class="skills">
+            <div class="bx-title">
+              <h3>my skills</h3>
+              <p>complete skills list</p>
+            </div>
+            <div>
+              <span>HTML</span>
+              <span>Pugjs</span>
+              <span>HAML</span>
+            </div>
+            <div>
+              <span>CSS</span>
+              <span>SAAS</span>
+              <span>Stylus</span>
+            </div>
+            <div>
+              <span>JavaScript</span>
+              <span>TypeScript</span>
+            </div>
+            <div>
+              <span>VueJs</span>
+              <span>ReactJs</span>
+            </div>
+            <div>
+              <span>Jest</span>
+              <span>Jasmine</span>
+            </div>
+            <div>
+              <span>PHP</span>
+              <span>Laravel</span>
+            </div>
+            <div>
+              <span>Python</span>
+              <span>Django</span>
+            </div>
+          </div>
+          <div class="last-activities">
+            <div class="bx-title">
+              <h3>last activities</h3>
+              <p>last activities done by the user</p>
+            </div>
+            <div class="flex-sb-c">
+              <img src="images/store.png" alt="" />
+              <div>
+                <p>store</p>
+                <p>bought the mastering JS course</p>
+              </div>
+              <div>
+                <p>18:10</p>
+                <p>yesterday</p>
+              </div>
+            </div>
+            <div class="flex-sb-c">
+              <img src="images/academy.png" alt="" />
+              <div>
+                <p>academy</p>
+                <p>got the PHP certificate</p>
+              </div>
+              <div>
+                <p>17:00</p>
+                <p>yesterday</p>
+              </div>
+            </div>
+            <div class="flex-sb-c">
+              <img src="images/badges.png" alt="" />
+              <div>
+                <p>badges</p>
+                <p>unlocked the 10 skills badge</p>
+              </div>
+              <div>
+                <p>14:20</p>
+                <p>yesterday</p>
+              </div>
+            </div>
+            <div class="flex-sb-c">
+              <img src="images/store.png" alt="" />
+              <div>
+                <p>store</p>
+                <p>bought the typeScript course</p>
+              </div>
+              <div>
+                <p>12:15</p>
+                <p>yesterday</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Profile Content -->
+        <div class="footer">
+          <p>2023 &copy; safouane</p>
+          <ul>
+            <li><a href="#">help</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">purchase</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="options-bar">
+        <a href="#"><i class="fa-solid fa-calendar-days"></i></a>
+        <a href="#"><i class="fa-solid fa-square-plus"></i></a>
+        <a href="#"><i class="fa-solid fa-file-code"></i></a>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
